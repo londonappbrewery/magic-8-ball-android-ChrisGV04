@@ -5,9 +5,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
+    android:background="@color/colorPrimaryDark"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/banner"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"/>
+
+    <ImageView
+        android:id="@+id/ballImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ball1"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/chooseButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/ballImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+
 </RelativeLayout>
